@@ -10,6 +10,6 @@ export default (app, logger) => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
   app.use(errors(logger));
-  app.use('/api/auth', authRouter); //ceci peut etre n'importe quelle ressource(postes,commentaires,etc..)
+  app.use('/api/auth', authRouter); 
   app.use('/api/autre', autreRessource);
 };

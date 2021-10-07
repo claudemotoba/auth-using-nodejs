@@ -14,7 +14,7 @@ routes(app, logger);
 logExceptions();
 
 // Configuration du serveur
-const port = process.env.PORT || 3090;
+const port = process.env.PORT || 3080;
 const server = http.createServer(app);
 server.listen(port, () => {
   logger.info(

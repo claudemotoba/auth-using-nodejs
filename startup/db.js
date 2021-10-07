@@ -4,7 +4,6 @@ import logging from '../config/logging';
 
 const { logger } = logging;
 
-//Connexion à la base de données
 mongoose
   .connect(configToUse.dbURL, {
     useNewUrlParser: true,
